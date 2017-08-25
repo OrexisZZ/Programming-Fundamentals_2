@@ -1,0 +1,34 @@
+<script>
+var a, b, c, i1, i2, answer;
+a=0;
+b=0;
+c=0;
+i1=0;
+i2=0;
+
+alert("This program will perform the Pythagorean Theorem for a triangle.");
+do
+{
+  answer = prompt("Please enter the numerical value of side a.","");
+  i1 = Number(answer);
+  if (isNaN(i1))
+  {
+	alert("That was not a number!");
+  }
+} while (isNaN(i1));
+
+do
+{
+  answer = prompt("Please enter the numerical value of side b.","");
+  i2 = Number(answer);
+  if (isNaN(i2))
+  {
+	alert("That was not a number!");
+  }
+} while (isNaN(i2));
+
+i3 = Math.sqrt(Math.pow(i1,2)+Math.pow(i2,2))
+
+document.write("The value of side c is " + i3);
+
+</script>
